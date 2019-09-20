@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './css/base.css';
+import './assets/css/base.css';
 // import './css/vendor.css';
-import './css/main.css';
+import './assets/css/main.css';
 
-import Header from './Component/Header/Header';
-import Content from './Component/Content/Content';
-import Extra from './Component/Extra/Extra';
-import Footer from './Component/Footer/Footer';
-import PreLoader from './Component/PreLoader/PreLoader';
+import Header from './components/Header/Header';
+import Content from './components/Content/Content';
+import Extra from './components/Extra/Extra';
+import Footer from './components/Footer/Footer';
+import SingleStandard from './components/Content/SingleStandard/SingleStandard';
+// import PreLoader from './components/PreLoader/PreLoader';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <Content />
+        {/* <Content /> */}
+        <SingleStandard />
         <Extra />
         <Footer />
         {/* <PreLoader /> */}

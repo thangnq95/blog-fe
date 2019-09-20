@@ -8,7 +8,7 @@ class Header extends React.Component {
                     <div className="header__content row">
                         <div className="header__logo">
                             <a className="logo" href="index.html">
-                                <img src="../../images/logo.svg" alt="Homepage" />
+                                <img src={('../../images/logo.svg')} alt="Homepage" />
                             </a>
                         </div> {/* end header__logo */}
                         <ul className="header__social">
@@ -73,7 +73,7 @@ class Header extends React.Component {
                     <div className="col-full">
                         <div className="featured">
                             <div className="featured__column featured__column--big">
-                                <div className="entry" style={{ backgroundImage: 'url("images/thumbs/featured/featured-guitarman.jpg")' }}>
+                                <div className="entry" style={{ backgroundImage: 'url("../../images/thumbs/featured/featured-guitarman.jpg")' }}>
                                     <div className="entry__content">
                                         <span className="entry__category"><a href="#0">Music</a></span>
                                         <h1><a href="#0" title>What Your Music Preference Says About You and Your Personality.</a></h1>
