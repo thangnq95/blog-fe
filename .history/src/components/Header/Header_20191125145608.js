@@ -126,6 +126,7 @@ class Header extends React.Component {
                         </div> {/* end featured */}
                     </div> {/* end col-full */}
                 </div> {/* end pageheader-content row */}
+           <Route path="/" exact
             </section>
         );
     }
