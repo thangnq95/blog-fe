@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 
-import {Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 class Header extends React.Component {
+    state = {
+        showSearchHeader: false
+    }
+
+    searchHeaderHandler = () => {
+        this.setState( ( prevState ) => {
+            return { showSearchHeader: !prevState.showSearchHeader };
+        } );
+    }
+
+    searchHeaderClosedHandler = () => {
+        this.setState( { showSearchHeader: false } );
+    }
+
     render() {
         return (
             <section className="s-pageheader s-pageheader--home">
                 <header className="header">
-                    <div className="header__content row">
+                    <div className={this.state.showSearchHeader?"header__content row".concat(" search-is-visible"):"header__content row"}>
                         <div className="header__logo">
                             <a className="logo" href="index.html">
                                 <img src={('../../images/logo.svg')} alt="Homepage" />
@@ -27,7 +41,7 @@ class Header extends React.Component {
                                 <a href="#0"><i className="fa fa-pinterest" aria-hidden="true" /></a>
                             </li>
                         </ul> {/* end header__social */}
-                        <a className="header__search-trigger" href="#0" />
+                        <a className="header__search-trigger" onClick={this.searchHeaderHandler} href="#0" />
                         <div className="header__search">
                             <form role="search" method="get" className="header__search-form" action="#">
                                 <label>
@@ -36,7 +50,7 @@ class Header extends React.Component {
                                 </label>
                                 <input type="submit" className="search-submit" defaultValue="Search" />
                             </form>
-                            <a href="#0" title="Close Search" className="header__overlay-close">Close</a>
+                            <a href="#0" title="Close Search" className="header__overlay-close" onClick={this.searchHeaderClosedHandler}>Close</a>
                         </div>  {/* end header__search */}
                         <a className="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
                         <nav className="header__nav-wrap">
