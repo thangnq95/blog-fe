@@ -4,11 +4,12 @@ import './App.css';
 import './assets/css/base.css';
 import './assets/css/main.css';
 
-import { Route, Switch , BrowserRouter} from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import Layout from './hoc/Layout/Layout';
 
 import Home from './containers/Home/Home';
+import About from './containers/About/About'
 
 class App extends Component {
   render() {
@@ -16,12 +17,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Layout>
-            <Home />
-            {/* <Switch>
-            <Route path="/checkout" component={Checkout} />
-            <Route path="/orders" exact component={Orders} />
-            <Route path="/" exact component={BurgerBuilder} />
-          </Switch> */}
+            <Route path="/about" exact component={About} />
+            <Route path="/" exact component={Home} />
           </Layout>
         </div>
       </BrowserRouter>

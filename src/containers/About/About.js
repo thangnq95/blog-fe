@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-import Content from '../../components/Content/Home/Content';
+import About from '../../components/Content/About/About';
 
 class Home extends Component {
+ 
     render() {
         return (
             <div>
-                <Content />
+                <About />
             </div>
         );
     };
