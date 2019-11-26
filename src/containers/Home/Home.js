@@ -23,7 +23,7 @@ class Home extends Component {
             <div>
                 <PageHeader />
                 <Route path="/" exact component={Content} />
-                <Route path="/category" component={About} />
+                <Route path="/about" component={About} />
                 {preload}
             </div>
         );
