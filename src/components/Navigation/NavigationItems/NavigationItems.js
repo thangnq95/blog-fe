@@ -41,8 +41,8 @@ class NavigationItems extends Component {
                 <NavigationItem classed="current" link="/">Home</NavigationItem>
 
                 <li className="has-children">
-                    <NavLink to="#0" exact onClick={()=>this.showSubMenusHandler("category")}>Categories</NavLink>
-                    <ul className="sub-menu" style={{ display: this.state.showSubMenuCategory ? "block" : "" }}>
+                    <NavLink to="#0" className={this.state.showSubMenuCategory?"sub-menu".concat("-is-open"):""} exact onClick={()=>this.showSubMenusHandler("category")}>Categories</NavLink>
+                    <ul className="sbu-menu" style={{ display: this.state.showSubMenuCategory ? "block" : "" }}>
                         <NavigationItem link="/lifestyle">Lifestyle</NavigationItem>
                         <NavigationItem link="/health">Health</NavigationItem>
                         <NavigationItem link="/family">Family</NavigationItem>
@@ -52,7 +52,7 @@ class NavigationItems extends Component {
                     </ul>
                 </li>
                 <li className="has-children">
-                    <NavLink to="#0" exact onClick={()=>this.showSubMenusHandler("blog")}>Blog</NavLink>
+                    <NavLink to="#0" className={this.state.showSubMenuBlog?"sub-menu".concat("-is-open"):""} exact onClick={()=>this.showSubMenusHandler("blog")}>Blog</NavLink>
                     <ul className="sub-menu" style={{ display: this.state.showSubMenuBlog ? "block" : "" }}>
                         <NavigationItem link="/single-video">Video Post</NavigationItem>
                         <NavigationItem link="/single-audio">Audio Post</NavigationItem>
