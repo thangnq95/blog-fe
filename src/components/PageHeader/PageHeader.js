@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
+import Header from './Header/Header';
+import PageHeaderContent from './Content/Content'
 
-class PageHeader extends React.Component {
+class PageHeader extends Component {
+
     render() {
         return (
-            <div id="preloader">
-                <div id="loader">
-                    <div className="line-scale">
-                        <div />
-                        <div />
-                        <div />
-                        <div />
-                        <div />
-                    </div>
-                </div>
-            </div>
-
+            <section className="s-pageheader s-pageheader--home">
+                <Header />
+                <PageHeaderContent />
+            </section>
         );
     }
 }

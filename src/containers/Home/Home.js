@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Router, { Route, Switch } from 'react-router-dom';
 
-import Header from '../../components/Header/Header';
-
+import PageHeader from '../../components/PageHeader/PageHeader';
+import Content from '../../components/Content/Home/Content';
+import About from '../../components/Content/About/About';
 import Preload from '../../components/PreLoader/PreLoader';
 
 class Home extends Component {
@@ -19,7 +21,9 @@ class Home extends Component {
         }
         return (
             <div>
-                <Header />
+                <PageHeader />
+                <Route path="/" exact component={Content} />
+                <Route path="/category" component={About} />
                 {preload}
             </div>
         );
