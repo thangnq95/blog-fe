@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 import { Route, Link } from 'react-router-dom';
 
+import guitarman  from '../../../assets/images/thumbs/featured/featured-guitarman.jpg';
+import watch  from '../../../assets/images/thumbs/featured/featured-watch.jpg';
+import beetle  from '../../../assets/images/thumbs/featured/featured-beetle.jpg';
+import user03  from '../../../assets/images/avatars/user-03.jpg';
+
 class PageHeaderContent extends Component {
 
     render() {
@@ -10,13 +15,13 @@ class PageHeaderContent extends Component {
                 <div className="col-full">
                     <div className="featured">
                         <div className="featured__column featured__column--big">
-                            <div className="entry" style={{ backgroundImage: 'url("../../images/thumbs/featured/featured-guitarman.jpg")' }}>
+                            <div className="entry" style={{ backgroundImage: `url(${guitarman})`}}>
                                 <div className="entry__content">
                                     <span className="entry__category"><a href="#0">Music</a></span>
                                     <h1><a href="#0" title>What Your Music Preference Says About You and Your Personality.</a></h1>
                                     <div className="entry__info">
                                         <a href="#0" className="entry__profile-pic">
-                                            <img className="avatar" src="images/avatars/user-03.jpg" alt />
+                                            <img className="avatar" src={user03} alt />
                                         </a>
                                         <ul className="entry__meta">
                                             <li><a href="#0">John Doe</a></li>
@@ -27,7 +32,7 @@ class PageHeaderContent extends Component {
                             </div> {/* end entry */}
                         </div> {/* end featured__big */}
                         <div className="featured__column featured__column--small">
-                            <div className="entry" style={{ backgroundImage: 'url("images/thumbs/featured/featured-watch.jpg")' }}>
+                            <div className="entry" style={{ backgroundImage: `url(${watch})`}}>
                                 <div className="entry__content">
                                     <span className="entry__category"><a href="#0">Management</a></span>
                                     <h1><a href="#0" title>The Pomodoro Technique Really Works.</a></h1>
@@ -42,7 +47,7 @@ class PageHeaderContent extends Component {
                                     </div>
                                 </div> {/* end entry__content */}
                             </div> {/* end entry */}
-                            <div className="entry" style={{ backgroundImage: 'url("images/thumbs/featured/featured-beetle.jpg")' }}>
+                            <div className="entry" style={{ backgroundImage: `url(${beetle})`}}>
                                 <div className="entry__content">
                                     <span className="entry__category"><a href="#0">LifeStyle</a></span>
                                     <h1><a href="#0" title>Throwback To The Good Old Days.</a></h1>
