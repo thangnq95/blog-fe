@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Article from '../Article/Article';
+
 class Content extends React.Component {
     render() {
         return (
@@ -7,6 +9,7 @@ class Content extends React.Component {
                 <div className="row masonry-wrap">
                     <div className="masonry">
                         <div className="grid-sizer" />
+                        <Article></Article>
                         <article className="masonry__brick entry format-standard" data-aos="fade-up">
                             <div className="entry__thumb">
                                 <a href="single-standard.html" className="entry__thumb-link">
@@ -39,83 +42,6 @@ class Content extends React.Component {
                                     <p>Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.</p>
                                     <cite>Dieter Rams</cite>
                                 </blockquote>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/tulips-400.jpg" srcSet="images/thumbs/masonry/tulips-400.jpg 1x, images/thumbs/masonry/tulips-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 15, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">10 Interesting Facts About Caffeine.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="category.html">Health</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/cookies-400.jpg" srcSet="images/thumbs/masonry/cookies-400.jpg 1x, images/thumbs/masonry/cookies-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 10, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">No Sugar Oatmeal Cookies.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="category.html">Cooking</a>
-                                        <a href="category.html">Health</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/wheel-400.jpg" srcSet="images/thumbs/masonry/wheel-400.jpg 1x, images/thumbs/masonry/wheel-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 10, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">Visiting Theme Parks Improves Your Health.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="#">Health</a>
-                                        <a href="#">Lifestyle</a>
-                                    </span>
-                                </div>
                             </div>
                         </article> {/* end article */}
                         <article className="masonry__brick entry format-video" data-aos="fade-up">
@@ -214,109 +140,6 @@ class Content extends React.Component {
                                     <cite>
                                         <a target="_blank" href="https://colorlib.com/">https://colorlib.com</a>
                                     </cite>
-                                </div>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/jump-400.jpg" srcSet="images/thumbs/masonry/jump-400.jpg 1x, images/thumbs/masonry/jump-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 10, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">Create Meaningful Family Moments.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="category.html">Family</a>
-                                        <a href="category.html">Relationship</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/beetle-400.jpg" srcSet="images/thumbs/masonry/beetle-400.jpg 1x, images/thumbs/masonry/beetle-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 10, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">Throwback To The Good Old Days.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="category.html">Lifestyle</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/fuji-400.jpg" srcSet="images/thumbs/masonry/fuji-400.jpg 1x, images/thumbs/masonry/fuji-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 10, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">Just Another  Standard Format Post.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="category.html">Design</a>
-                                        <a href="category.html">Photography</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </article> {/* end article */}
-                        <article className="masonry__brick entry format-standard" data-aos="fade-up">
-                            <div className="entry__thumb">
-                                <a href="single-standard.html" className="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/sydney-400.jpg" srcSet="images/thumbs/masonry/sydney-400.jpg 1x, images/thumbs/masonry/sydney-800.jpg 2x" alt />
-                                </a>
-                            </div>
-                            <div className="entry__text">
-                                <div className="entry__header">
-                                    <div className="entry__date">
-                                        <a href="single-standard.html">December 10, 2017</a>
-                                    </div>
-                                    <h1 className="entry__title"><a href="single-standard.html">Planning Your First Trip to Sydney.</a></h1>
-                                </div>
-                                <div className="entry__excerpt">
-                                    <p>
-                                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-            </p>
-                                </div>
-                                <div className="entry__meta">
-                                    <span className="entry__meta-links">
-                                        <a href="category.html">Travel</a>
-                                        <a href="category.html">Vacation</a>
-                                    </span>
                                 </div>
                             </div>
                         </article> {/* end article */}
