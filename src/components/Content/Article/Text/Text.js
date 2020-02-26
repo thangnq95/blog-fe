@@ -5,19 +5,18 @@ const text = (props) => {
         <div className="entry__text">
             <div className="entry__header">
                 <div className="entry__date">
-                    <a href="single-video.html">December 10, 2017</a>
+                    <a href="single-video.html">{props.date}</a>
                 </div>
-                <h1 className="entry__title"><a href="single-video.html">Key Benefits Of Family Photography.</a></h1>
+                <h1 className="entry__title"><a href="single-video.html">{props.date}</a></h1>
             </div>
             <div className="entry__excerpt">
-                <p>
-                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-</p>
+                <p>{props.excerpt}</p>
             </div>
             <div className="entry__meta">
                 <span className="entry__meta-links">
-                    <a href="category.html">Family</a>
-                    <a href="category.html">Photography</a>
+                    {Array(props.metaLinks).forEach(link => {
+                        <a href="category.html">{link}</a>
+                    })}
                 </span>
             </div>
         </div>

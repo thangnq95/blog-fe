@@ -9,7 +9,7 @@ class Content extends React.Component {
                 <div className="row masonry-wrap">
                     <div className="masonry">
                         <div className="grid-sizer" />
-                        <Article></Article>
+                        <Article articleType="format-video"/>
                         <article className="masonry__brick entry format-standard" data-aos="fade-up">
                             <div className="entry__thumb">
                                 <a href="single-standard.html" className="entry__thumb-link">
