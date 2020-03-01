@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SingleVideoComponent from '../../../components/Content/Single/Video/SingleVideo';
 
 class SingleVideo extends React.Component {

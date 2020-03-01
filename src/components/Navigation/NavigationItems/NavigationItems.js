@@ -29,6 +29,7 @@ class NavigationItems extends Component {
                     };
                 });
                 break;
+            default: break;
         }
 
     }

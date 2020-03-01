@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class About extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class About extends React.Component {
       <div className="s-content__post-thumb">
         <img src="images/thumbs/about/about-1000.jpg" srcSet="images/thumbs/about/about-2000.jpg 2000w, 
                            images/thumbs/about/about-1000.jpg 1000w, 
-                           images/thumbs/about/about-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt />
+                           images/thumbs/about/about-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="alt" />
       </div>
     </div> {/* end s-content__media */}
     <div className="col-full s-content__main">

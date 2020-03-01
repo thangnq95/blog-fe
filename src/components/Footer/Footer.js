@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Footer extends React.Component {
     render() {
@@ -43,7 +43,7 @@ class Footer extends React.Component {
                             <h4>Our Newsletter</h4>
                             <p>Sit vel delectus amet officiis repudiandae est voluptatem. Tempora maxime provident nisi et fuga et enim exercitationem ipsam. Culpa consequatur occaecati.</p>
                             <div className="subscribe-form">
-                                <form id="mc-form" className="group" noValidate="true">
+                                <form id="mc-form" className="group" >
                                     <input type="email" defaultValue name="EMAIL" className="email" id="mc-email" placeholder="Email Address" required />
                                     <input type="submit" name="subscribe" defaultValue="Send" />
                                     <label htmlFor="mc-email" className="subscribe-message" />

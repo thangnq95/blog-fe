@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Article from '../Article/Article';
 
@@ -6,12 +6,7 @@ import lamp400 from '../../../assets/images/thumbs/masonry/lamp-400.jpg';
 import lamp800 from '../../../assets/images/thumbs/masonry/lamp-400.jpg';
 import shutterbug400 from '../../../assets/images/thumbs/masonry/shutterbug-400.jpg';
 import shutterbug800 from '../../../assets/images/thumbs/masonry/shutterbug-800.jpg';
-import gallery1400 from '../../../assets/images/thumbs/masonry/gallery/gallery-1-400.jpg';
-import gallery1800 from '../../../assets/images/thumbs/masonry/gallery/gallery-1-800.jpg';
-import gallery2400 from '../../../assets/images/thumbs/masonry/gallery/gallery-2-400.jpg';
-import gallery2800 from '../../../assets/images/thumbs/masonry/gallery/gallery-2-800.jpg';
-import gallery3400 from '../../../assets/images/thumbs/masonry/gallery/gallery-3-400.jpg';
-import gallery3800 from '../../../assets/images/thumbs/masonry/gallery/gallery-3-800.jpg';
+
 
 class Category extends React.Component {
   render() {

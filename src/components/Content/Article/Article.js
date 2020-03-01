@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Article extends React.Component {
   render() {
@@ -85,6 +85,7 @@ class Article extends React.Component {
         );
         break;
       }
+      default : break;
     }
     return (
       <article className={`masonry__brick entry ${this.props.articleType}`} data-aos="fade-up">

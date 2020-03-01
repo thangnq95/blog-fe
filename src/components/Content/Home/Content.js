@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Article from '../Article/Article';
 
@@ -6,12 +6,6 @@ import lamp400 from '../../../assets/images/thumbs/masonry/lamp-400.jpg';
 import lamp800 from '../../../assets/images/thumbs/masonry/lamp-400.jpg';
 import shutterbug400 from '../../../assets/images/thumbs/masonry/shutterbug-400.jpg';
 import shutterbug800 from '../../../assets/images/thumbs/masonry/shutterbug-800.jpg';
-import gallery1400 from '../../../assets/images/thumbs/masonry/gallery/gallery-1-400.jpg';
-import gallery1800 from '../../../assets/images/thumbs/masonry/gallery/gallery-1-800.jpg';
-import gallery2400 from '../../../assets/images/thumbs/masonry/gallery/gallery-2-400.jpg';
-import gallery2800 from '../../../assets/images/thumbs/masonry/gallery/gallery-2-800.jpg';
-import gallery3400 from '../../../assets/images/thumbs/masonry/gallery/gallery-3-400.jpg';
-import gallery3800 from '../../../assets/images/thumbs/masonry/gallery/gallery-3-800.jpg';
 
 class Content extends React.Component {
     render() {
@@ -21,6 +15,7 @@ class Content extends React.Component {
                     <div className="masonry">
                         <div className="grid-sizer" />
                         <Article
+                            key="1"
                             articleType="format-standard"
                             thumbClassName=""
                             thumbHref="single-standard.html"
@@ -33,12 +28,14 @@ class Content extends React.Component {
                             metaLinks={["Design", "Photography"]}
                         />
                         <Article
+                            key="2"
                             articleType="format-quote"
                             thumbClassName=""
                             quoteContent="Good design is making something intelligible and memorable. Great design is making something memorable and meaningful."
                             quoteCite="Dieter Rams"
                         />
                         <Article
+                            key="3"
                             articleType="format-video"
                             thumbClassName="video-image"
                             thumbHref="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0"

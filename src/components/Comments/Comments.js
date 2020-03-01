@@ -8,7 +8,7 @@ class Comments extends Component {
             <ol className="commentlist">
                 <li className="depth-1 comment">
                     <div className="comment__avatar">
-                        <img width={50} height={50} className="avatar" src="images/avatars/user-01.jpg" alt />
+                        <img width={50} height={50} className="avatar" src="images/avatars/user-01.jpg" alt="" />
                     </div>
                     <div className="comment__content">
                         <div className="comment__info">
@@ -26,7 +26,7 @@ class Comments extends Component {
                 </li>
                 <li className="thread-alt depth-1 comment">
                     <div className="comment__avatar">
-                        <img width={50} height={50} className="avatar" src="images/avatars/user-04.jpg" alt />
+                        <img width={50} height={50} className="avatar" src="images/avatars/user-04.jpg" alt="" />
                     </div>
                     <div className="comment__content">
                         <div className="comment__info">
@@ -45,7 +45,7 @@ class Comments extends Component {
                     <ul className="children">
                         <li className="depth-2 comment">
                             <div className="comment__avatar">
-                                <img width={50} height={50} className="avatar" src="images/avatars/user-03.jpg" alt />
+                                <img width={50} height={50} className="avatar" src="images/avatars/user-03.jpg" alt="" />
                             </div>
                             <div className="comment__content">
                                 <div className="comment__info">
@@ -64,7 +64,7 @@ class Comments extends Component {
                             <ul className="children">
                                 <li className="depth-3 comment">
                                     <div className="comment__avatar">
-                                        <img width={50} height={50} className="avatar" src="images/avatars/user-04.jpg" alt />
+                                        <img width={50} height={50} className="avatar" src="images/avatars/user-04.jpg" alt="" />
                                     </div>
                                     <div className="comment__content">
                                         <div className="comment__info">
@@ -86,7 +86,7 @@ class Comments extends Component {
                 </li>
                 <li className="depth-1 comment">
                     <div className="comment__avatar">
-                        <img width={50} height={50} className="avatar" src="images/avatars/user-02.jpg" alt />
+                        <img width={50} height={50} className="avatar" src="images/avatars/user-02.jpg" alt="" />
                     </div>
                     <div className="comment__content">
                         <div className="comment__info">

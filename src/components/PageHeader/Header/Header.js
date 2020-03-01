@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { Route, Link } from 'react-router-dom';
-
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../../Navigation/NavigationItems/NavigationItems';
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
 import ExtraArticle from './Article/Article';
 
@@ -15,8 +15,9 @@ class Extra extends React.Component {
                         <h3>Popular Posts</h3>
                         <div className="block-1-2 block-m-full popular__posts">
                             {
-                                arrayArticle.map(item => (
-                                    <ExtraArticle
+                                arrayArticle.map((item,index) => (
+                                    <ExtraArticle 
+                                        key={index}
                                         thumbLink="#0"
                                         thumbImageSrc={wheel150}
                                         title="Visiting Theme Parks Improves Your Health."
@@ -52,8 +53,8 @@ class Extra extends React.Component {
                         <h3>Tags</h3>
                         <div className="tagcloud">
                             {
-                                arrayTag.map(item=>(
-                                <a href="#0">{item}</a>
+                                arrayTag.map((item,i)=>(
+                                <a key={i} href="#0">{item}</a>
                                 ))
                             }
                         </div> {/* end tagcloud */}

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import StyleGuideCSS from './StyleGuide.css';
+import  './StyleGuide.css';
 
 class StyleGuide extends React.Component {
     render() {
@@ -17,7 +17,7 @@ class StyleGuide extends React.Component {
     <div className="col-six tab-full">
       <h3>Paragraph and Image</h3>
       <p>
-        <a href="#"><img width={120} height={120} className="pull-left" alt="sample-image" src="images/sample-image.jpg" /></a>
+        <a href="#"><img alt="" width="120" height="120" className="pull-left" src="images/sample-image.jpg" /></a>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque posuere nunc justo tempus leo. </p>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentumodio, ac blandit ante orci ut diam.	
@@ -153,12 +153,12 @@ class StyleGuide extends React.Component {
     <div className="col-six tab-full">
       <h3 className="add-bottom">Responsive Image</h3>
       <p><img src="images/wheel-500.jpg" srcSet="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" sizes="(max-width: 1000px) 100vw, 1000px" alt /></p>
+                images/wheel-500.jpg 500w" sizes="(max-width: 1000px) 100vw, 1000px" alt="alt" /></p>
     </div>
     <div className="col-six tab-full">
       <h3 className="add-bottom">Responsive video</h3>
       <div className="video-container">
-        <iframe src="https://player.vimeo.com/video/14592941?title=0&byline=0&portrait=0&color=F64B39" width={500} height={281} frameBorder={0} webkitallowfullscreen mozallowfullscreen allowFullScreen /> 
+        <iframe src="https://player.vimeo.com/video/14592941?title=0&byline=0&portrait=0&color=F64B39" width={500} height={281} frameBorder={0} webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen /> 
       </div>
     </div>
   </div> {/* end row */}

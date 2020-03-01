@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './assets/css/font-awesome/css/font-awesome.min.css';
 import './assets/css/font-awesome/fonts/fontawesome-webfont.woff';
