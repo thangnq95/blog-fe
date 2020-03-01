@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import Comments from '../../../Comments/Comments';
+import FormAddComment from '../../../Comments/FormAddComment/FormAddComment';
+
 class SingleVideo extends React.Component {
   render() {
     return (
@@ -100,124 +103,12 @@ class SingleVideo extends React.Component {
             <div className="col-full">
               <h3 className="h2">5 Comments</h3>
               {/* commentlist */}
-              <ol className="commentlist">
-                <li className="depth-1 comment">
-                  <div className="comment__avatar">
-                    <img width={50} height={50} className="avatar" src="images/avatars/user-01.jpg" alt />
-                  </div>
-                  <div className="comment__content">
-                    <div className="comment__info">
-                      <cite>Itachi Uchiha</cite>
-                      <div className="comment__meta">
-                        <time className="comment__time">Dec 16, 2017 @ 23:05</time>
-                        <a className="reply" href="#0">Reply</a>
-                      </div>
-                    </div>
-                    <div className="comment__text">
-                      <p>Adhuc quaerendum est ne, vis ut harum tantas noluisse, id suas iisque mei. Nec te inani ponderum vulputate,
-                  facilisi expetenda has et. Iudico dictas scriptorem an vim, ei alia mentitum est, ne has voluptua praesent.</p>
-                    </div>
-                  </div>
-                </li> {/* end comment level 1 */}
-                <li className="thread-alt depth-1 comment">
-                  <div className="comment__avatar">
-                    <img width={50} height={50} className="avatar" src="images/avatars/user-04.jpg" alt />
-                  </div>
-                  <div className="comment__content">
-                    <div className="comment__info">
-                      <cite>John Doe</cite>
-                      <div className="comment__meta">
-                        <time className="comment__time">Dec 16, 2017 @ 24:05</time>
-                        <a className="reply" href="#0">Reply</a>
-                      </div>
-                    </div>
-                    <div className="comment__text">
-                      <p>Sumo euismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei. Esse euismod
-                        urbanitas ut sed, et duo scaevola pericula splendide. Primis veritus contentiones nec ad, nec et
-                  tantas semper delicatissimi.</p>
-                    </div>
-                  </div>
-                  <ul className="children">
-                    <li className="depth-2 comment">
-                      <div className="comment__avatar">
-                        <img width={50} height={50} className="avatar" src="images/avatars/user-03.jpg" alt />
-                      </div>
-                      <div className="comment__content">
-                        <div className="comment__info">
-                          <cite>Kakashi Hatake</cite>
-                          <div className="comment__meta">
-                            <time className="comment__time">Dec 16, 2017 @ 25:05</time>
-                            <a className="reply" href="#0">Reply</a>
-                          </div>
-                        </div>
-                        <div className="comment__text">
-                          <p>Duis sed odio sit amet nibh vulputate
-                            cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
-                      cursus a sit amet mauris</p>
-                        </div>
-                      </div>
-                      <ul className="children">
-                        <li className="depth-3 comment">
-                          <div className="comment__avatar">
-                            <img width={50} height={50} className="avatar" src="images/avatars/user-04.jpg" alt />
-                          </div>
-                          <div className="comment__content">
-                            <div className="comment__info">
-                              <cite>John Doe</cite>
-                              <div className="comment__meta">
-                                <time className="comment__time">Dec 16, 2017 @ 25:15</time>
-                                <a className="reply" href="#0">Reply</a>
-                              </div>
-                            </div>
-                            <div className="comment__text">
-                              <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                          etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li> {/* end comment level 1 */}
-                <li className="depth-1 comment">
-                  <div className="comment__avatar">
-                    <img width={50} height={50} className="avatar" src="images/avatars/user-02.jpg" alt />
-                  </div>
-                  <div className="comment__content">
-                    <div className="comment__info">
-                      <cite>Shikamaru Nara</cite>
-                      <div className="comment__meta">
-                        <time className="comment-time">Dec 16, 2017 @ 25:15</time>
-                        <a className="reply" href="#">Reply</a>
-                      </div>
-                    </div>
-                    <div className="comment__text">
-                      <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                    </div>
-                  </div>
-                </li>  {/* end comment level 1 */}
-              </ol> {/* end commentlist */}
+              {<Comments />}
               {/* respond
                 ================================================== */}
               <div className="respond">
                 <h3 className="h2">Add Comment</h3>
-                <form name="contactForm" id="contactForm" method="post" action>
-                  <fieldset>
-                    <div className="form-field">
-                      <input name="cName" type="text" id="cName" className="full-width" placeholder="Your Name" defaultValue />
-                    </div>
-                    <div className="form-field">
-                      <input name="cEmail" type="text" id="cEmail" className="full-width" placeholder="Your Email" defaultValue />
-                    </div>
-                    <div className="form-field">
-                      <input name="cWebsite" type="text" id="cWebsite" className="full-width" placeholder="Website" defaultValue />
-                    </div>
-                    <div className="message form-field">
-                      <textarea name="cMessage" id="cMessage" className="full-width" placeholder="Your Message" defaultValue={""} />
-                    </div>
-                    <button type="submit" className="submit btn--primary btn--large full-width">Submit</button>
-                  </fieldset>
-                </form> {/* end form */}
+                <FormAddComment />
               </div> {/* end respond */}
             </div> {/* end col-full */}
           </div> {/* end row comments */}

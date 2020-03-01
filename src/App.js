@@ -7,24 +7,32 @@ import './assets/css/base.css';
 import './assets/css/fonts.css';
 import './assets/css/main.css';
 
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Layout from './hoc/Layout/Layout';
 
 import Home from './containers/Home/Home';
-import About from './containers/About/About'
+import About from './containers/About/About';
+import Category from './containers/Category/Category';
+import SingleVideo from './containers/Single/Video/SingleVideo';
+import StyleGuide from './containers/StyleGuide/StyleGuide';
+import Contact from './containers/Contact/Contact';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Layout>
+      <div className="App">
+        <Layout>
+          <Switch>
             <Route path="/about" exact component={About} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/lifestyle" exact component={Category} />
+            <Route path="/single-video" exact component={SingleVideo} />
+            <Route path="/style-guide" exact component={StyleGuide} />
             <Route path="/" exact component={Home} />
-          </Layout>
-        </div>
-      </BrowserRouter>
+          </Switch>
+        </Layout>
+      </div>
     );
   }
 }

@@ -1,73 +1,29 @@
 import React, { Component } from 'react';
 
+import ExtraArticle from './Article/Article';
+
+import wheel150 from '../../assets/images/thumbs/small/wheel-150.jpg';
+
 class Extra extends React.Component {
     render() {
+        let arrayArticle = [0, 1, 2, 3, 4];
+        let arrayTag = ["Salad", "Recipe", "Places", "Tips", "Friends","Travel","Exercise","Reading","Running","Reading","Self-Help","Reading"];
         return (
             <section className="s-extra">
                 <div className="row top">
                     <div className="col-eight md-six tab-full popular">
                         <h3>Popular Posts</h3>
                         <div className="block-1-2 block-m-full popular__posts">
-                            <article className="col-block popular__post">
-                                <a href="#0" className="popular__thumb">
-                                    <img src="images/thumbs/small/wheel-150.jpg" alt />
-                                </a>
-                                <h5><a href="#0">Visiting Theme Parks Improves Your Health.</a></h5>
-                                <section className="popular__meta">
-                                    <span className="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
-                                    <span className="popular__date"><span>on</span> <time dateTime="2017-12-19">Dec 19, 2017</time></span>
-                                </section>
-                            </article>
-                            <article className="col-block popular__post">
-                                <a href="#0" className="popular__thumb">
-                                    <img src="images/thumbs/small/shutterbug-150.jpg" alt />
-                                </a>
-                                <h5><a href="#0">Key Benefits Of Family Photography.</a></h5>
-                                <section className="popular__meta">
-                                    <span className="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
-                                    <span className="popular__date"><span>on</span> <time dateTime="2017-12-18">Dec 18, 2017</time></span>
-                                </section>
-                            </article>
-                            <article className="col-block popular__post">
-                                <a href="#0" className="popular__thumb">
-                                    <img src="images/thumbs/small/cookies-150.jpg" alt />
-                                </a>
-                                <h5><a href="#0">Absolutely No Sugar Oatmeal Cookies.</a></h5>
-                                <section className="popular__meta">
-                                    <span className="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
-                                    <span className="popular__date"><span>on</span> <time dateTime="2017-12-16">Dec 16, 2017</time></span>
-                                </section>
-                            </article>
-                            <article className="col-block popular__post">
-                                <a href="#0" className="popular__thumb">
-                                    <img src="images/thumbs/small/beetle-150.jpg" alt />
-                                </a>
-                                <h5><a href="#0">Throwback To The Good Old Days.</a></h5>
-                                <section className="popular__meta">
-                                    <span className="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
-                                    <span className="popular__date"><span>on</span> <time dateTime="2017-12-16">Dec 16, 2017</time></span>
-                                </section>
-                            </article>
-                            <article className="col-block popular__post">
-                                <a href="#0" className="popular__thumb">
-                                    <img src="images/thumbs/small/tulips-150.jpg" alt />
-                                </a>
-                                <h5><a href="#0">10 Interesting Facts About Caffeine.</a></h5>
-                                <section className="popular__meta">
-                                    <span className="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
-                                    <span className="popular__date"><span>on</span> <time dateTime="2017-12-14">Dec 14, 2017</time></span>
-                                </section>
-                            </article>
-                            <article className="col-block popular__post">
-                                <a href="#0" className="popular__thumb">
-                                    <img src="images/thumbs/small/salad-150.jpg" alt />
-                                </a>
-                                <h5><a href="#0">Healthy Mediterranean Salad Recipes</a></h5>
-                                <section className="popular__meta">
-                                    <span className="popular__author"><span>By</span> <a href="#0"> John Doe</a></span>
-                                    <span className="popular__date"><span>on</span> <time dateTime="2017-12-12">Dec 12, 2017</time></span>
-                                </section>
-                            </article>
+                            {
+                                arrayArticle.map(item => (
+                                    <ExtraArticle
+                                        thumbLink="#0"
+                                        thumbImageSrc={wheel150}
+                                        title="Visiting Theme Parks Improves Your Health."
+                                        author=" John Doe"
+                                        date=" Dec 19, 2017" />
+                                ))
+                            }
                         </div> {/* end popular_posts */}
                     </div> {/* end popular */}
                     <div className="col-four md-six tab-full about">
@@ -95,17 +51,11 @@ class Extra extends React.Component {
                     <div className="col-full tags">
                         <h3>Tags</h3>
                         <div className="tagcloud">
-                            <a href="#0">Salad</a>
-                            <a href="#0">Recipe</a>
-                            <a href="#0">Places</a>
-                            <a href="#0">Tips</a>
-                            <a href="#0">Friends</a>
-                            <a href="#0">Travel</a>
-                            <a href="#0">Exercise</a>
-                            <a href="#0">Reading</a>
-                            <a href="#0">Running</a>
-                            <a href="#0">Self-Help</a>
-                            <a href="#0">Vacation</a>
+                            {
+                                arrayTag.map(item=>(
+                                <a href="#0">{item}</a>
+                                ))
+                            }
                         </div> {/* end tagcloud */}
                     </div> {/* end tags */}
                 </div> {/* end tags-wrap */}

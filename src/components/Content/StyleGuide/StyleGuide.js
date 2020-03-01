@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import StyleGuideCSS from './StyleGuide.css';
+
 class StyleGuide extends React.Component {
     render() {
         return (
