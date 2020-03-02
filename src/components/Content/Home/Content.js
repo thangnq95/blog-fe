@@ -15,10 +15,10 @@ class Content extends React.Component {
                     <div className="masonry">
                         <div className="grid-sizer" />
                         <Article
-                            key="1"
+                            key="a1"
                             articleType="format-standard"
                             thumbClassName=""
-                            thumbHref="single-standard.html"
+                            thumbHref="single-standard"
                             thumbHrefClassName="entry__thumb-link"
                             thumbImageSrc1={lamp400}
                             thumbImageSrc2={lamp800}
@@ -28,14 +28,14 @@ class Content extends React.Component {
                             metaLinks={["Design", "Photography"]}
                         />
                         <Article
-                            key="2"
+                            key="a2"
                             articleType="format-quote"
                             thumbClassName=""
                             quoteContent="Good design is making something intelligible and memorable. Great design is making something memorable and meaningful."
                             quoteCite="Dieter Rams"
                         />
                         <Article
-                            key="3"
+                            key="a3"
                             articleType="format-video"
                             thumbClassName="video-image"
                             thumbHref="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0"
@@ -47,7 +47,19 @@ class Content extends React.Component {
                             textExcerpt="Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua..."
                             metaLinks={["Family", "Photography"]}
                         />
-                       
+                        {
+                            this.props.posts.filter(item => item.userId == 1)
+                                .map((item,index) => (
+                                    <Article
+                                        key={`post-${index}`}
+                                        articleType="format-quote"
+                                        thumbClassName=""
+                                        quoteContent={item.body}
+                                        quoteCite={item.userId}
+                                    />
+                                ))
+                        }
+
                     </div> {/* end masonry */}
                 </div> {/* end masonry-wrap */}
                 <div className="row">

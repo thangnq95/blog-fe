@@ -27,8 +27,8 @@ class Article extends React.Component {
             </div>
             <div className="entry__meta">
               <span className="entry__meta-links">
-                {this.props.metaLinks.map(link => (
-                  <a href="category.html">{link}</a>
+                {this.props.metaLinks.map((link,index) => (
+                  <a key={index} href="category.html">{link}</a>
                 ))}
               </span>
             </div>

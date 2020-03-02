@@ -6,7 +6,7 @@ import './assets/css/base.css';
 import './assets/css/fonts.css';
 import './assets/css/main.css';
 
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch,withRouter } from 'react-router-dom';
 
 import Layout from './hoc/Layout/Layout';
 
@@ -18,10 +18,30 @@ import StyleGuide from './containers/StyleGuide/StyleGuide';
 import Contact from './containers/Contact/Contact';
 
 class App extends Component {
+ 
+  state = {
+    isHome:true
+  }
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.onRouteChanged();
+    }
+  }
+
+  onRouteChanged() {
+    console.log("ROUTE CHANGED");
+    
+    if(this.props.location.pathname !== "/"){
+      this.setState({isHome:false});
+    }else{
+      this.setState({isHome:true});
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <Layout>
+        <Layout isHome={this.state.isHome}>
           <Switch>
             <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={Contact} />
@@ -36,4 +56,6 @@ class App extends Component {
   }
 }
 
-export default App;
+
+
+export default withRouter(App);

@@ -2,7 +2,6 @@ import * as actionTypes from './actions';
 
 const initialState = {
     isHome: true,
-
 }
 
 const reducer = (state = initialState, action) => {
@@ -10,12 +9,12 @@ const reducer = (state = initialState, action) => {
         case actionTypes.CHANGE_ROUTER:
             return {
                 ...state,
-               isHome:!status.isHome,
+                isHome: !status.isHome,
             };
         case "A":
             return {};
-        default: 
-        return state;
+        default:
+            return state;
     }
 }
 

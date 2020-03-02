@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 
 import ExtraArticle from './Article/Article';
 
@@ -7,7 +7,7 @@ import wheel150 from '../../assets/images/thumbs/small/wheel-150.jpg';
 class Extra extends React.Component {
     render() {
         let arrayArticle = [0, 1, 2, 3, 4];
-        let arrayTag = ["Salad", "Recipe", "Places", "Tips", "Friends","Travel","Exercise","Reading","Running","Reading","Self-Help","Reading"];
+        let arrayTag = ["Salad", "Recipe", "Places", "Tips", "Friends", "Travel", "Exercise", "Reading", "Running", "Reading", "Self-Help", "Reading"];
         return (
             <section className="s-extra">
                 <div className="row top">
@@ -15,8 +15,8 @@ class Extra extends React.Component {
                         <h3>Popular Posts</h3>
                         <div className="block-1-2 block-m-full popular__posts">
                             {
-                                arrayArticle.map((item,index) => (
-                                    <ExtraArticle 
+                                arrayArticle.map((item, index) => (
+                                    <ExtraArticle
                                         key={index}
                                         thumbLink="#0"
                                         thumbImageSrc={wheel150}
@@ -53,8 +53,8 @@ class Extra extends React.Component {
                         <h3>Tags</h3>
                         <div className="tagcloud">
                             {
-                                arrayTag.map((item,i)=>(
-                                <a key={i} href="#0">{item}</a>
+                                arrayTag.map((item, i) => (
+                                    <a key={i} href="#0">{item}</a>
                                 ))
                             }
                         </div> {/* end tagcloud */}

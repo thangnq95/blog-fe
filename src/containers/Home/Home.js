@@ -11,7 +11,6 @@ class Home extends Component {
     componentDidMount() {
         axios.get('/posts')
             .then(res => {
-                console.log(res);
                 const fetchPosts = [];
                 for (let key in res.data) {
                     fetchPosts.push({
@@ -34,5 +33,6 @@ class Home extends Component {
         );
     };
 }
+
 
 export default Home;

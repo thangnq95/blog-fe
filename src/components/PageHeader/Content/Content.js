@@ -16,7 +16,7 @@ class PageHeaderContent extends Component {
                             <div className="entry" style={{ backgroundImage: `url(${guitarman})`}}>
                                 <div className="entry__content">
                                     <span className="entry__category"><a href="#0">Music</a></span>
-                                    <h1><a href="#0" title>What Your Music Preference Says About You and Your Personality.</a></h1>
+                                    <h1><a href="#0" >What Your Music Preference Says About You and Your Personality.</a></h1>
                                     <div className="entry__info">
                                         <a href="#0" className="entry__profile-pic">
                                             <img className="avatar" src={user03} alt="" />
@@ -33,7 +33,7 @@ class PageHeaderContent extends Component {
                             <div className="entry" style={{ backgroundImage: `url(${watch})`}}>
                                 <div className="entry__content">
                                     <span className="entry__category"><a href="#0">Management</a></span>
-                                    <h1><a href="#0" title>The Pomodoro Technique Really Works.</a></h1>
+                                    <h1><a href="#0" >The Pomodoro Technique Really Works.</a></h1>
                                     <div className="entry__info">
                                         <a href="#0" className="entry__profile-pic">
                                             <img className="avatar" src="images/avatars/user-03.jpg" alt="" />
@@ -48,7 +48,7 @@ class PageHeaderContent extends Component {
                             <div className="entry" style={{ backgroundImage: `url(${beetle})`}}>
                                 <div className="entry__content">
                                     <span className="entry__category"><a href="#0">LifeStyle</a></span>
-                                    <h1><a href="#0" title>Throwback To The Good Old Days.</a></h1>
+                                    <h1><a href="#0" >Throwback To The Good Old Days.</a></h1>
                                     <div className="entry__info">
                                         <a href="#0" className="entry__profile-pic">
                                             <img className="avatar" src="images/avatars/user-03.jpg" alt="" />

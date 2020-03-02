@@ -28,7 +28,7 @@ class Layout extends Component {
         return (
             <Aux>
                 <div>
-                    <PageHeader />
+                    <PageHeader isHome={this.props.isHome}/>
                     <main className={classes.Content}>
                         {this.props.children}
                     </main>
